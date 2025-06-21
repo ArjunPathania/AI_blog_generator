@@ -16,8 +16,7 @@
         </div>
         <div>
             <a href="#" class="text-white hover:underline mx-4">Welcome {{ user.username }}</a>
-            <a href="/blog-list" class="text-white hover:underline mx-4">Saved Blog Posts</a>
-            <a href="#" class="text-white hover:underline">Logout</a>
+            <a href="logout" class="text-white hover:underline">Logout</a>
         </div>
     </nav>
 
@@ -36,6 +35,7 @@
                             <h3 class="text-lg font-semibold">{{article.youtube_title}}</h3>
                             <p>{{article.generated_content|truncatechars:80}}</p>
                         </div>
+                        <br>
                     </a>
                     {% endfor %}
                     <!-- Repeat -->
